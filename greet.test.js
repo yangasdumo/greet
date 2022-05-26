@@ -1,17 +1,28 @@
 describe('TEST MY GREET FUNCTION' , function(){
     
-    it(' should pass when enter a name' , function(){
-        assert.equal(greet('name'), 'enter name');
-   
+    it('should return error message when name is empty' , function(){
+        const  greet = Greet()
+        greet.setName('')
+        assert.equal("enter name", greet.getName())
+       
+    });
+           
+    it('should return when you select a language' , function(){
+        const  greet = Greet()
+        greet.setLanguage()
+        assert.equal("", greet.getLanguage())
+       
     });
 
-    it('should pass when you select a language' , function(){
-        assert.equal( greet('language'), 'enter name');
+    it('should return the number of names' , function(){
+        const  greet = Greet()
 
+        greet.setName('sdumo')
+        greet.setName('young')
+        greet.setName('zoe')
+
+        assert.equal("3", greet.getN())
+       
     });
 
-    it('should pass invalid name when enter a number' , function(){
-        assert.equal( greet(5), 'enter name');
-
-    });
 });
