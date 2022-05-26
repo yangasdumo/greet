@@ -15,15 +15,15 @@ function Greet(){
   }
   
   function setLanguage(){
-    if(language == "Isixhosa") {
+    if(language == "isixhosa") {
       return  language = "molo"
     }else 
 
-    if(language =="English"){
+    if(language =="inglish"){
       return language = "hello"
     }else 
 
-    if(language == "Afrikaans"){
+    if(language == "afrikaans"){
          return language ="Moire"
     }
   }
