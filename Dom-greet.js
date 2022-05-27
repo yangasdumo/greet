@@ -34,6 +34,7 @@ function greet  () {
         else if(result === "sesotho"){
         showElement.innerHTML = "dumela, " + storedWord;
         }
+        
     }
     
 
