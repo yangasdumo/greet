@@ -7,6 +7,10 @@ body {
     padding: 0;
     box-sizing: border-box;
 } */
+.container {
+	/* position: fixed; */
+	text-align: center;
+} 
 .language{
      text-align: center;
      
@@ -38,7 +42,7 @@ h3{
 	border-radius: 1em;	
 }
 .button {
-	margin-left: 62em;
+	/* margin-left: 62em;  */
 	border: 0.25em solid green;
 	padding: 1em;
 	border-radius: 1em;	
@@ -46,12 +50,12 @@ h3{
 }
 
 @media screen  and (max-width:680px){
-    h1{
+    /* h1{
         text-align:center;
-    }
+    } */
 
     .button{
-    margin-left: 6em;
+    /* margin-left: 6em; */
 	border: 0.25em solid green;
 	padding: 1em;
 	border-radius: 1em;	
