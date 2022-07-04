@@ -10,44 +10,45 @@
 </head>
 
 <body>
-    <div class="container"> 
-        <h1>Greeting</h1>
-
-        <div class="message">
-            NAME
-            <input type="text" name="name" class="inputName" placeholder="enter the name">
+    <div class="container">
+        <div class="wrapper">
+            <h1>Greeting</h1>
+    
+            <div class="message">
+                <span class="name">Name</span>
+                <input type="text" name="name" class="inputName" placeholder="enter the name">
+                <span class="counter">0</span>
+            </div>
+                <div class="language-container">
+                    <div class=language>
+                        <h2>English</h2>
+                        <input type="radio" name="radio-button"  class="radio-input" value="english">
+                    </div>
             
-            <span class="counter">0</span>
-        </div>
-
-        <div class=language>
-            <h2>English</h2>
-            <input type="radio" name="radio-button"  class="radio-input" value="english">
-        </div>
-
-        <div class=language>
-            <h2>Isixhosa</h2>
-            <input type="radio" name="radio-button" class="radio-input" value="isixhosa">
-        </div>
-
-        <div class=language>
-            <h2>sesotho</h2>
-            <input type="radio" name="radio-button" class="radio-input" value="sesotho">
-        </div>
-          <br>
-          <br>
-          <div class="showElement">
-              
-          </div>
-
-        <div>
-            <input class="button" type="button" value="greet me">
+                    <div class=language>
+                        <h2>Isixhosa</h2>
+                        <input type="radio" name="radio-button" class="radio-input" value="isixhosa">
+                    </div>
+            
+                    <div class=language>
+                        <h2>sesotho</h2>
+                        <input type="radio" name="radio-button" class="radio-input" value="sesotho">
+                    </div>
+                </div>
+              <div class="showElement">
+                 
+              </div>
+    
+            <div>
+                <div class="button">Greet Me</div>
+                <div class="clear">Clear</div>
+            </div>
         </div>
 
     </div>
-    <script src="./greet.js"></script>
-    <script src="./Dom-greet.js"></script>
-
+    <script src="./greet.js" type="module"></script>
+    <script src="./Dom-greet.js" type="module"></script>
+    <script src="./main.js" type="module"></script>
 </body>
 
 </html>

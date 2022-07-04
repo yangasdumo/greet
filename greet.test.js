@@ -16,7 +16,7 @@ describe('TEST MY GREET FUNCTION' , function(){
 
     it('should return the number of names' , function(){
         const  greet = Greet()
-
+      
         greet.setName('sdumo')
         greet.setName('young')
         greet.setName('zoe')

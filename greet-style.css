@@ -1,18 +1,25 @@
-body {
-    background-color: rgb(95, 219, 235);
-}
 
-/* * {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-} */
+}
+
+
 .container {
-	/* position: fixed; */
+	display: flex;
 	text-align: center;
-} 
+	justify-content: center;
+	height: 100vh;
+}
+.wrapper{
+	padding: 0 20px;
+	border-left: .2px gray solid ;
+	border-right: .2px gray solid ;
+}
 .language{
-     text-align: center;
+	margin: 0 20px;
+    text-align: center;
      
 }
 h1 {
@@ -27,39 +34,55 @@ h3{
 .message{
     font-size: 90%;
 	margin: 1em auto;
-	width: 20em;
 	padding: 1em;
-	background-color:rgb(128, 0, 122);
+	background-color:rgba(83, 83, 83, 0.511);
 	border-radius: 1em;	
 }
 
 .showElement{
     font-size: 90%;
-	margin: 1em auto;
+	margin: 20px auto;
 	width: 20em;
 	padding: 2em;
 	background-color:antiquewhite;
 	border-radius: 1em;	
 }
-.button {
-	/* margin-left: 62em;  */
-	border: 0.25em solid green;
-	padding: 1em;
-	border-radius: 1em;	
-	width: 15em;
+.button, .clear {
+	cursor: pointer;
+	font-size: 20px;
+	border: .2px solid green;
+	padding: 10px 20px;
+	border-radius: 1em;
+	transition: .2s ease-in;
 }
 
+.button:hover, .clear:hover{
+		border: .2px solid gray;
+	background-color:antiquewhite;
+}
+
+.name{
+	font-size: 18px;
+}
+
+.counter{
+	font-size: 18px;
+}
+.language-container{
+	margin-top: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+input{
+	border-radius: 15px;
+	padding: 5px;
+	border: 1px solid gray;
+	margin: 0 15px;
+}
 @media screen  and (max-width:680px){
     /* h1{
         text-align:center;
     } */
 
-    .button{
-    /* margin-left: 6em; */
-	border: 0.25em solid green;
-	padding: 1em;
-	border-radius: 1em;	
-	width: 15em;
-
-    }
 }
