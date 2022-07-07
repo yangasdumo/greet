@@ -16,9 +16,7 @@ let storeNames = [];
 if (localStorage.getItem('names')) {
     storeNames = JSON.parse(localStorage.getItem('names'))
 }
-// else{
-// storeNames = localStorage.setItem('names', JSON.stringify(storeNames))
-// }
+
 
 counter.innerHTML = storeNames.length
 
@@ -43,7 +41,7 @@ function greetings() {
         if (result !== null) {
             if (storeNames.includes(storedWord)) {
                 showElement.innerHTML = ('the name duplicates');
-                // result;
+            
             } else {
                 if (result === "isixhosa") {
                     showElement.innerHTML = "Molo, " + storedWord;
