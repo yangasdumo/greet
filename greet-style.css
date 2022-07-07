@@ -60,7 +60,10 @@ h3{
 		border: .2px solid gray;
 	background-color:antiquewhite;
 }
+.error-message{
+	color:red;
 
+}
 .name{
 	font-size: 18px;
 }
