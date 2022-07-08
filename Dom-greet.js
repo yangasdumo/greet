@@ -34,10 +34,10 @@ function greetings() {
     var storedWord = inputName.value.toLowerCase();
     console.log(regex(storedWord))
     regex(storedWord)
-
+    
     if (names.value == '' && language == undefined) {
         errorMessage.innerHTML = 'Please enter name and language'
-
+        
     }else if(/\d/g.test(storedWord)){
         errorMessage.innerHTML ='Please use Alphabets'
 
@@ -48,6 +48,10 @@ function greetings() {
         errorMessage.innerHTML = 'Please enter name '
     }
 
+    setTimeout(function() {
+        errorMessage.innerHTML =''
+    }, 5000);
+    
     if (storedWord !== "") {
         showElement.innerHTML = ""
 
